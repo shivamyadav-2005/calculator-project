@@ -12,41 +12,99 @@
     align-items: center;
     justify-content: center;
 }
-.calculator{
+.calculator {
     background: #3a4452;
     border-radius: 10px;
     padding: 20px;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 0.5s forwards;
 }
-.calculator form input{
+
+@keyframes fadeInScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.calculator form input {
     border: 0;
     outline: 0;
     width: 60px;
     height: 60px;
     border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
-    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.05);
     font-size: 20px;
     color: #fff;
     margin: 10px;
     cursor: pointer;
+    transition: all 0.2s ease; /* Smooth animation */
 }
+.calculator form input:active {
+    transform: translateY(2px) scale(0.95);
+    box-shadow: inset -2px -2px 5px rgba(255,255,255,0.2), inset 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+.calculator form input:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
 form .display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
 }
-form .display input{
+form .display input {
     text-align: right;
     flex: 1;
     font-size: 45px;
-    box-shadow: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
-form input.equal{
+
+form .display input:focus {
+    box-shadow: 0 0 15px #33ffd8;
+}
+
+form input.equal {
     width: 145px;
+    background: linear-gradient(135deg, #ff5945, #ff836b); /* eye-catching gradient */
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 89, 69, 0.5); /* soft shadow */
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+form input.equal:hover {
+    background: linear-gradient(135deg, #ff836b, #ff9a81); /* lighter gradient on hover */
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(255, 89, 69, 0.7); /* glow effect */
+}
+
+form input.equal:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 4px 8px rgba(255,89,69,0.5);
+}
+
+
 form input.operator{
     color: #33ffd8;
 }
+form input.operator:hover {
+    color: #00fff0;
+    text-shadow: 0 0 8px #00fff0;
+}
+
 
 @media (max-width: 480px) {
     .calculator {
