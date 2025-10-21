@@ -56,7 +56,4 @@ Smooth, modern UI for better usability
 
 ✍️ Author
 Shivam Yadav
-🔗 Portfolio
 
-vbnet
-Copy code
