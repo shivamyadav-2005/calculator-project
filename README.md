@@ -21,7 +21,7 @@ A **modern, interactive, and responsive calculator** built with **HTML, CSS, and
 ---
 
 ## 🚀 Live Demo
-[View Live Demo](https://shivamyadav-2005.github.io/calculator/)
+[View Live Demo](https://shivamyadav-2005.github.io/calculator-project/)
 
 ## 📂 Project Repository
 [View on GitHub](https://github.com/shivamyadav-2005/calculator)
