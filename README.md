@@ -18,4 +18,6 @@ HTML5 • CSS3 • JavaScript
 
 ## ✨ Author
 **Shivam Yadav**  
-🔗 [Portfolio](https://shivamyadav-2005/shivamyadav-2005.github.io/)
+Check out my portfolio here: 
+🔗[Shivam Yadav Portfolio](https://shivamyadav-2005.github.io/)
+
